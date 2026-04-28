@@ -1,5 +1,5 @@
 log_dir: "Models/LJSpeech"
-first_stage_path: "first_stage.pth"
+first_stage_path: "epoch_2nd_00100.pth"
 save_freq: 20
 log_interval: 10
 device: "cuda"
