@@ -88,14 +88,14 @@ loss_params:
     
     lambda_mono: 1. # monotonic alignment loss (1st stage, TMA)
     lambda_s2s: 1. # sequence-to-sequence loss (1st stage, TMA)
-    TMA_epoch: 50 # TMA starting epoch (1st stage)
+    TMA_epoch: 0 # start alignment from epoch 0 (fine-tuning, not training from scratch)
 
     lambda_F0: 1. # F0 reconstruction loss (2nd stage)
     lambda_norm: 1. # norm reconstruction loss (2nd stage)
     lambda_dur: 1. # duration loss (2nd stage)
     lambda_ce: 20. # duration predictor probability output CE loss (2nd stage)
-    lambda_sty: 1. # style reconstruction loss (2nd stage)
-    lambda_diff: 1. # score matching loss (2nd stage)
+    lambda_sty: 0.0 # style reconstruction (0 = disabled)
+    lambda_diff: 0.0. # diffusion loss (0 = disabled, no diffusion)
     
     diff_epoch: 999 # disable style diffusion for Kokoro 
     joint_epoch: 3 # joint training starting epoch (2nd stage)
