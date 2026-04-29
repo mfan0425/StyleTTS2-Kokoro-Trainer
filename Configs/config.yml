@@ -95,7 +95,7 @@ loss_params:
     lambda_dur: 1. # duration loss (2nd stage)
     lambda_ce: 20. # duration predictor probability output CE loss (2nd stage)
     lambda_sty: 0.0 # style reconstruction (0 = disabled)
-    lambda_diff: 0.0. # diffusion loss (0 = disabled, no diffusion)
+    lambda_diff: 0.0 # diffusion loss (0 = disabled, no diffusion)
     
     diff_epoch: 999 # disable style diffusion for Kokoro 
     joint_epoch: 3 # joint training starting epoch (2nd stage)
